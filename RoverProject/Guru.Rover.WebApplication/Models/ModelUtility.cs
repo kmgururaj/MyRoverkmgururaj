@@ -63,7 +63,10 @@ namespace Guru.Rover.WebApplication.Controllers.Models
                     }
                     viweModel.Add(roverPositionViewModel);
                     //Note: Break after finding one rover details, if more than one rovers move together break condition will change
-                    break;
+                    if (ApplicationConstants.IsOneRoverCompletesItsMoveToStartAnother)
+                    {
+                        break;
+                    }
                 }
             }
             return viweModel;
