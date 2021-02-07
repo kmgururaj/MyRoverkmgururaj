@@ -28,18 +28,17 @@ namespace Guru.DataProcessor.PositionHandler
         /// <returns>Next Compass Position</returns>
         public char GetNextCompassPosition(char currentCompassPosition, char nextRotationDirection)
         {
-            var directionChanger = new RoverRotatorHandler();
             char newDirection;
             switch (nextRotationDirection)
             {
                 case 'L':
                     {
-                        newDirection = directionChanger.MoveLeftGetCompassPosition(currentCompassPosition);
+                        newDirection = MoveLeftGetCompassPosition(currentCompassPosition);
                     }
                     break;
                 case 'R':
                     {
-                        newDirection = directionChanger.MoveRightGetCompassPosition(currentCompassPosition);
+                        newDirection = MoveRightGetCompassPosition(currentCompassPosition);
                     }
                     break;
                 default:
