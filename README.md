@@ -9,6 +9,7 @@
 
 	1.1 application reads CSV file which contaions commands to control rover 
 		CSV file path is hardcoded in application "~\Guru.Rover.WebApplication\CsvData\Moments.csv
+	
 	1.2 Save commands in session (For this application commands are saved and its states are maintained in session.)
 
 2. Render a button in UI to start / restart rover	
@@ -16,6 +17,7 @@
 3. On click of button 
 	
 	3.1 Draw table (For this application number of rows (= 30) and columns (= 40) are hardcoded in application "Guru.DataProcessor/ApplicationConstants.cs")
+	
 	3.2 Get initial rover positions and render rovers in table as per command
 
 4. Periodically get next command and move rover in UI (Periodicity is hardcoded in application to 3 Sec "Guru.DataProcessor/ApplicationConstants.cs")
